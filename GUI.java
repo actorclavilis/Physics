@@ -5,7 +5,8 @@ import javax.swing.event.ChangeListener;
 
 public class GUI extends JPanel
 {
-    Dimension d;
+	private static final long serialVersionUID = 1984487381852927429L;
+	Dimension d;
     int width, height;
     BufferedImage image;
     JLabel imageL;

@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class TrivialApplication
+public class Physics
 {
     public static void main(String[] Args) throws Exception
     {
