@@ -17,9 +17,9 @@ public class GUI extends JPanel
     	d = a;
     	this.setLayout(null);
         this.setBounds(0, 0, d.width, d.height); 
-        this.setBackground(Color.BLACK);  
+        this.setBackground(Color.black);  
         this.setVisible(true);
-        this.setFocusable(true);
+        //this.setFocusable(true);
             
         width = this.getWidth();
         height = this.getHeight();
@@ -29,7 +29,7 @@ public class GUI extends JPanel
         imageL.setBounds(0,0,width,height);
                
         myG = image.getGraphics();
-        myG.setColor(Color.WHITE);
+        myG.setColor(Color.white);
 
         this.add(imageL);
     } 
