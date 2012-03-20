@@ -6,6 +6,7 @@ import javax.swing.event.ChangeListener;
 public class GUI extends JPanel
 {
     Dimension d;
+    JPanel inputPanel;
     int width, height;
     BufferedImage image;
     JLabel imageL;
@@ -30,6 +31,13 @@ public class GUI extends JPanel
         myG = image.getGraphics();
         myG.setColor(Color.WHITE);
 
+		inputPanel = new JPanel();
+		inputPanel.setBackground(Color.DARK_GRAY);
+		inputPanel.setLayout(null);
+		inputPanel.setVisible(true);
+		inputPanel.setBounds((int)(width*0.7),0,(int)(width*0.3),height);
+
+		this.add(inputPanel);
         this.add(imageL);
     } 
     
