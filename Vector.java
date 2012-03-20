@@ -27,7 +27,9 @@ public class Vector {
 	}
 	
 	public double in(Vector v) { return x*v.x+y*v.y; }
-	public double outN(Vector v) { return norm()*v.norm()*Math.cos(arg()-v.arg()); }
+	public double outN(Vector v) { return norm()*v.norm()*Math.sin(arg()-v.arg()); }
+	
+	public double d(Vector v) { return sum(v.scale(-1)).norm(); }
 	
 	public static final Vector ZERO = Vector.withRectilinear(0,0);
 }
