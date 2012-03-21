@@ -5,6 +5,7 @@ import javax.swing.event.ChangeListener;
 
 public class GUI extends JPanel implements Runnable
 {
+	private static final long serialVersionUID = 1984487381852927429L;
     private Dimension d;
     private JPanel inputPanel;
     private int width, height;
