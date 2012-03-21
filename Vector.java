@@ -1,7 +1,7 @@
 
 
 public class Vector {
-	double x, y;
+	public final double x, y;
 	
 	private Vector(double _x, double _y) {
 		x=_x; y=_y;
@@ -12,9 +12,6 @@ public class Vector {
 	public static Vector withPolar(double _n, double _a) {
 		return new Vector(_n*Math.cos(_a), _n*Math.sin(_a));
 	}
-
-	public double x() { return x; }
-	public double y() { return y; }
 	
 	public double norm() { return Math.sqrt(x*x+y*y); }
 	public double arg() { return Math.atan2(y,x); }

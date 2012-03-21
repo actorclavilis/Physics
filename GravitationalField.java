@@ -9,6 +9,11 @@ public abstract class GravitationalField implements Field {
 			return strength.scale(p.m());
 		}
 	}
+	public static GravitationalField withConstant(Vector _strength) {
+		Constant c = new Constant();
+		c.strength = _strength;
+		return c;
+	}
 	
 	private static class FromParticle extends GravitationalField {
 		Particle s;
@@ -19,5 +24,10 @@ public abstract class GravitationalField implements Field {
 			double arg = s.x().arg() - p.x().arg();
 			return Vector.withPolar(norm,arg);
 		}
+	}
+	public static GravitationalField withParticle(Particle _source) {
+		FromParticle c = new FromParticle();
+		c.s = _source;
+		return c;
 	}
 }
